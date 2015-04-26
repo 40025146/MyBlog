@@ -7,7 +7,7 @@
 /* Build.php 相關程式設定 */
 
   /* Domain name，結尾記得加 斜線 */
-  $_domain = 'http://comdan66.github.io/';
+  $_domain = 'http://40025146.github.io/';
 
   /* Git Repository 名稱 */
   $_git_name = 'blog';
