@@ -44,6 +44,13 @@
 
     <script src="../js/frame.js" language="javascript" type="text/javascript"></script>
     <script src="../js/article.js" language="javascript" type="text/javascript"></script>
+    <style type="text/css">
+    html body #container .left .block .title .fb_like{
+      width: 100px;
+      margin-top: 50px;
+      font-size: 12px;
+    }
+    </style>
   </head>
   <body lang="zh-tw">
 
@@ -104,9 +111,12 @@
     <div id="container" class="clearfix">
       <div class='left'>
         <div class='block paper article'>
-          <div class='title clearfix'>
+          <div class='title clearfix' >
             <h2><?php echo $name;?></h2>
-            <div class='date timeago' data-time='<?php echo $date;?>'><?php echo $date;?></div>
+              <div class='date timeago' data-time='<?php echo $date;?>'></div>
+              <div class="fb_like">
+                <div class="fb-share-button"  data-href="http://40025146.github.io/MyBlog/article/<?php echo $name;?>.html" data-layout="button_count"></div>
+              </div>
           </div>
           <div class='content'><?php echo $content;?></div>
           <div class='info clearfix'>
@@ -213,5 +223,13 @@
         <div class='oa-footer-content'><?php echo $_footer['title'];?><br /><?php echo $_footer['content'];?></div>
       </div>
     </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=643770685755021";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
