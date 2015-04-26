@@ -2,26 +2,33 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>Panda's blog</title>
+    <title>跨平台APP練功1 - 虎科多方通APP - Panda's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="index,follow" />
     <meta name="author" content="潘泓銘(HongMing Pan)" />
-    <meta name="keywords" content="潘泓銘 | HongMing Pan | panda0909 | blog | php | javascript | jQuery | html | html | css | java" />
-    <meta name="description" content="紀錄生活、工作，這是一個屬於 pan 的個人部落格，內容皆屬於靜態 html 公開，版面也是自己實作切板，空間則是使用 github.io，如果對這 blog 技術有興趣的，非常歡迎到我 GitHub 參考囉！ 跨平台APP練功1 - 虎科多方通APP, 當了一年 web 工程師的心得.." />
+    <meta name="keywords" content="潘泓銘(HongMing Pan) | Panda's blog | 練功區" />
+    <meta name="description" content="說明這是一套專為虎科學生開發的一套整合網站的APP目的是方便使用單一帳號多方通入系統減少登入上的麻煩，以及使用手機平台的方便性這是個人練功所產生的作品，非學校單位開發中-尚未上架至google play製作時間總共 6天學校的各處室網站幾乎沒有一套制定的規則去架設網站以至於開發上遇到重重困難例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料而是經過網頁處理後的資料因此大多使用了iframe標籤直接嵌入系統環境開發軟體: phonegap 、 cordova編譯環境: Android 3.7.1 、 ios 3.8.0Part1. 登入登入時可選擇…" />
 
     <meta property="og:site_name" content="Panda's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://40025146.github.io/blog/img/og.png" />
-    <meta property="og:title" content="Panda's blog" />
+    <meta property="og:image" content="http://40025146.github.io/blog/markdowns/2015-04-26_00-00-00/../../img/11129282_821664344567429_1474493896_n.jpg" alt="Alt text" />
+    <meta property="og:title" content="跨平台APP練功1 - 虎科多方通APP - Panda's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="紀錄生活、工作，這是一個屬於 pan 的個人部落格，內容皆屬於靜態 html 公開，版面也是自己實作切板，空間則是使用 github.io，如果對這 blog 技術有興趣的，非常歡迎到我 GitHub 參考囉！ 跨平台APP練功1 - 虎科多方通APP, 當了一年 web 工程師的心得.." />
-    <meta property="og:url" content="http://40025146.github.io/blog/articles/0.html" />
+    <meta property="og:description" content="說明這是一套專為虎科學生開發的一套整合網站的APP目的是方便使用單一帳號多方通入系統減少登入上的麻煩，以及使用手機平台的方便性這是個人練功所產生的作品，非學校單位開發中-尚未上架至google play製作時間總共 6天學校的各處室網站幾乎沒有一套制定的規則去架設網站以至於開發上遇到重重困難例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料而是經過網頁處理後的資料因此大多使用了iframe標籤直接嵌入系統環境開發軟體: phonegap 、 cordova編譯環境: Android 3.7.1 、 ios 3.8.0Part1. 登入登入時可選擇…" />
+    <meta property="og:url" content="http://40025146.github.io/blog/article/跨平台APP練功1 - 虎科多方通APP.html" />
+
+    <link href="../res/fancyBox_v2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="../res/fancyBox_v2.1.5/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+    <link href="../res/fancyBox_v2.1.5/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
 
     <link href="../css/frame.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_pc.css" rel="stylesheet" type="text/css">
     <link href="../css/frame_mobile.css" rel="stylesheet" type="text/css">
+    <link href="../css/article.css" rel="stylesheet" type="text/css">
+    <link href="../css/article_pc.css" rel="stylesheet" type="text/css">
+    <link href="../css/article_mobile.css" rel="stylesheet" type="text/css">
 
     <script src="../js/ga.js" language="javascript" type="text/javascript"></script>
     <script src="../res/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript"></script>
@@ -29,8 +36,14 @@
     <script src="../res/jquery-timeago_v1.3.1/jquery.timeago.js" language="javascript" type="text/javascript"></script>
     <script src="../res/jquery-timeago_v1.3.1/locales/jquery.timeago.zh-TW.js" language="javascript" type="text/javascript"></script>
     <script src="../res/jQuery-Mobile-v1.3.0/swipe.js" language="javascript" type="text/javascript"></script>
+    
+    <script src="../res/fancyBox_v2.1.5/jquery.fancybox.js" language="javascript" type="text/javascript"></script>
+    <script src="../res/fancyBox_v2.1.5/jquery.fancybox-buttons.js" language="javascript" type="text/javascript"></script>
+    <script src="../res/fancyBox_v2.1.5/jquery.fancybox-thumbs.js" language="javascript" type="text/javascript"></script>
+    <script src="../res/fancyBox_v2.1.5/jquery.fancybox-media.js" language="javascript" type="text/javascript"></script>
 
     <script src="../js/frame.js" language="javascript" type="text/javascript"></script>
+    <script src="../js/article.js" language="javascript" type="text/javascript"></script>
   </head>
   <body lang="zh-tw">
 
@@ -71,49 +84,73 @@
     </div>
 
     <div id="container" class="clearfix">
-      <div class="left">
+      <div class='left'>
+        <div class='block paper article'>
+          <div class='title clearfix'>
+            <h2>跨平台APP練功1 - 虎科多方通APP</h2>
+            <div class='date timeago' data-time='2015-04-26 00:00:00'>2015-04-26 00:00:00</div>
+          </div>
+          <div class='content'>
+<h2 id="toc_0">說明</h2>
 
-            <div class='block paper'>
-              <div class='title clearfix'>
-                <a href="../article/%E8%B7%A8%E5%B9%B3%E5%8F%B0APP%E7%B7%B4%E5%8A%9F1%20-%20%E8%99%8E%E7%A7%91%E5%A4%9A%E6%96%B9%E9%80%9AAPP.html"><h2>跨平台APP練功1 - 虎科多方通APP</h2></a>
-                <div class='date timeago' data-time='2015-04-26 00:00:00'>2015-04-26 00:00:00</div>
-              </div>
-              <div class='content'>說明這是一套專為虎科學生開發的一套整合網站的APP目的是方便使用單一帳號多方通入系統減少登入上的麻煩，以及使用手機平台的方便性這是個人練功所產生的作品，非學校單位開發中-尚未上架至google play製作時間總共…</div>
-              <div class='info clearfix'>
-                <div class='tags'>
-                                  <span><a href=".././tag/%E7%B7%B4%E5%8A%9F%E5%8D%80">練功區</a></span>
-                              </div>
-                <div class='more'>
-                  <a href="../article/%E8%B7%A8%E5%B9%B3%E5%8F%B0APP%E7%B7%B4%E5%8A%9F1%20-%20%E8%99%8E%E7%A7%91%E5%A4%9A%E6%96%B9%E9%80%9AAPP.html">閱讀更多 »</a>
-                </div>
-              </div>
-            </div>
-            <div class='block paper'>
-              <div class='title clearfix'>
-                <a href="../article/%E7%95%B6%E4%BA%86%E4%B8%80%E5%B9%B4%20web%20%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E5%BF%83%E5%BE%97...html"><h2>當了一年 web 工程師的心得..</h2></a>
-                <div class='date timeago' data-time='2015-01-11 02:35:33'>2015-01-11 02:35:33</div>
-              </div>
-              <div class='content'>這幾天，在 ptt 上面看到一篇文章其中有說到一句話，令我有所感觸...一間公司會不會賺錢 問工程師就對了!!我怎覺得貌似有幾分道理... 各位覺得呢？有時候，工程師對產品不提意見不代表沒意見，只是不想讓穩定的生活…</div>
-              <div class='info clearfix'>
-                <div class='tags'>
-                                  <span><a href=".././tag/%E6%B5%81%E6%B0%B4%E6%96%87">流水文</a></span>
-                              </div>
-                <div class='more'>
-                  <a href="../article/%E7%95%B6%E4%BA%86%E4%B8%80%E5%B9%B4%20web%20%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E5%BF%83%E5%BE%97...html">閱讀更多 »</a>
-                </div>
-              </div>
-            </div>
+<p>這是一套專為虎科學生開發的一套整合網站的APP
+目的是方便使用單一帳號多方通入系統
+減少登入上的麻煩，以及使用手機平台的方便性</p>
 
-            <div class='block pagination'>
-            <ul class="pagination clearfix">
-                        <li class="active"><a href="0.html">1</a></li>
-                    </ul>
+<p>這是個人練功所產生的作品，非學校單位
+開發中-尚未上架至google play
+製作時間總共 6天</p>
+
+<p>學校的各處室網站幾乎沒有一套制定的規則去架設網站
+以至於開發上遇到重重困難
+例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料
+而是經過網頁處理後的資料
+因此大多使用了iframe標籤直接嵌入</p>
+
+<h4 id="toc_1">系統環境</h4>
+
+<p>開發軟體: phonegap 、 cordova</p>
+
+<p>編譯環境: Android 3.7.1 、 ios 3.8.0</p>
+
+<h4 id="toc_2">Part1. 登入</h4>
+
+<p>登入時可選擇是否儲存賬密資料，儲存的方式使用SQL Lite 並不會將個人資料儲存在SD卡中作為檔案，同時方便下一次開啟時自動讀取。
+<img src=".././markdowns/2015-04-26_00-00-00/../../img/11129282_821664344567429_1474493896_n.jpg" alt="Alt text"></p>
+
+<h4 id="toc_3">Part2. 首頁</h4>
+
+<p>將大部分學生常用的網頁系統納入主要功能
+讀取。
+<img src=".././markdowns/2015-04-26_00-00-00/../../img/11129282_821664217900775_39050421_n.jpg" alt="Alt text"></p>
+
+<h4 id="toc_4">Part3. 部分展示</h4>
+
+<h5 id="toc_5">行事曆</h5>
+
+<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11131718_821664177900779_1423000097_n.jpg" alt="Alt text"></p>
+
+<h5 id="toc_6">個人課表</h5>
+
+<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11125270_821664104567453_1012146925_n.jpg" alt="Alt text"></p>
+
+<h5 id="toc_7">校務ecare</h5>
+
+<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11088738_821664084567455_1234733542_n.jpg" alt="Alt text"></p>
+
+
+</div>
+          <div class='info clearfix'>
+            <div class='tags all'>
+                          <span><a href=".././tag/%E7%B7%B4%E5%8A%9F%E5%8D%80">練功區</a></span>
+                      </div>
           </div>
         </div>
+      </div>
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide'></div>
+                <div class='message hide' data-name='跨平台APP練功1 - 虎科多方通APP'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='' target='_blank'>
                   <div class='avatar_outline'>
