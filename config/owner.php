@@ -43,7 +43,7 @@
   /* 網頁右方的 widget */
   $_pins = array (
     'owner_info' => array (
-      'avatar' => 'https://graph.facebook.com/100000100541088/picture?width=100&height=100',
+      'avatar' => 'https://graph.facebook.com/732250603508804/picture?width=100&height=100',
       'name'   => '潘泓銘(Panda)',
       'href'   => '',
       'info_1' => 'panda0909@gmail.com',
