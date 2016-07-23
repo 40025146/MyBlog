@@ -2,22 +2,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <title>跨平台APP練功1 - 虎科多方通APP - Panda's blog</title>
+    <title>【Python】利用pyquery對網頁parser - Panda's blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <meta name="robots" content="index,follow" />
     <meta name="author" content="潘泓銘(HongMing Pan)" />
-    <meta name="keywords" content="潘泓銘(HongMing Pan) | Panda's blog | phonegap" />
-    <meta name="description" content="說明下載apk這是一套專為虎科學生開發的一套整合網站的APP目的是方便使用單一帳號多方通入系統減少登入上的麻煩，以及使用手機平台的方便性這是個人練功所產生的作品，非學校單位開發中-尚未上架至google play製作時間總共 6天學校的各處室網站幾乎沒有一套制定的規則去架設網站以至於開發上遇到重重困難例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料而是經過網頁處理後的資料因此大多使用了iframe標籤直接嵌入系統環境開發軟體: phonegap 、 cordova編譯環境: Android 3.7.1 、 ios 3.8.0Part1. 登入登入…" />
+    <meta name="keywords" content="潘泓銘(HongMing Pan) | Panda's blog | python" />
+    <meta name="description" content="【Python】利用pyquery對網頁parser這是本人第一支測試的python爬蟲程式，使用到pyquery套件，令python環境中可直接使用jquery選擇器，讓習慣jquery的開發者能方便使用從臺北捐血中心網頁中，將圖示與及時資料截取到個人網頁中。結果呈現github連結 https://github.com/40025146/spider" />
 
     <meta property="og:site_name" content="Panda's blog" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="http://40025146.github.io/blog/markdowns/2015-04-26_00-00-00/../../img/11129282_821664344567429_1474493896_n.jpg" alt="Alt text" />
-    <meta property="og:title" content="跨平台APP練功1 - 虎科多方通APP - Panda's blog" />
+    <meta property="og:image" content="http://40025146.github.io/blog/https://raw.githubusercontent.com/40025146/spider/master/pic1.png" alt="Alt text" />
+    <meta property="og:title" content="【Python】利用pyquery對網頁parser - Panda's blog" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:description" content="說明下載apk這是一套專為虎科學生開發的一套整合網站的APP目的是方便使用單一帳號多方通入系統減少登入上的麻煩，以及使用手機平台的方便性這是個人練功所產生的作品，非學校單位開發中-尚未上架至google play製作時間總共 6天學校的各處室網站幾乎沒有一套制定的規則去架設網站以至於開發上遇到重重困難例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料而是經過網頁處理後的資料因此大多使用了iframe標籤直接嵌入系統環境開發軟體: phonegap 、 cordova編譯環境: Android 3.7.1 、 ios 3.8.0Part1. 登入登入…" />
-    <meta property="og:url" content="http://40025146.github.io/blog/article/跨平台APP練功1 - 虎科多方通APP.html" />
+    <meta property="og:description" content="【Python】利用pyquery對網頁parser這是本人第一支測試的python爬蟲程式，使用到pyquery套件，令python環境中可直接使用jquery選擇器，讓習慣jquery的開發者能方便使用從臺北捐血中心網頁中，將圖示與及時資料截取到個人網頁中。結果呈現github連結 https://github.com/40025146/spider" />
+    <meta property="og:url" content="http://40025146.github.io/blog/article/【Python】利用pyquery對網頁parser.html" />
 
     <link href="../res/fancyBox_v2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
     <link href="../res/fancyBox_v2.1.5/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
@@ -97,76 +97,38 @@
       <div class='left'>
         <div class='block paper article'>
           <div class='title clearfix' >
-            <h2>跨平台APP練功1 - 虎科多方通APP</h2>
-              <div class='date timeago' data-time='2015-04-26 00:00:00'></div>
+            <h2>【Python】利用pyquery對網頁parser</h2>
+              <div class='date timeago' data-time='2014-12-15 00:00:00'></div>
               <div class="fb_like">
-                <div class="fb-like" data-href="http://40025146.github.io/MyBlog/article/跨平台APP練功1 - 虎科多方通APP.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                <div class="fb-like" data-href="http://40025146.github.io/MyBlog/article/【Python】利用pyquery對網頁parser.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
               </div>
           </div>
           <div class='content'>
-<h2 id="toc_0">說明</h2>
+<h2 id="toc_0">【Python】利用pyquery對網頁parser</h2>
 
-<p><a href="http://140.130.35.62:8080/csie40025146/open/%E8%99%8E%E7%A7%91%E5%A4%9A%E6%96%B9%E9%80%9A_0.0.1.apk">下載apk</a></p>
+<p>這是本人第一支測試的python爬蟲程式，使用到pyquery套件，令python環境中可直接使用jquery選擇器，讓習慣jquery的開發者能方便使用</p>
 
-<p>這是一套專為虎科學生開發的一套整合網站的APP
-目的是方便使用單一帳號多方通入系統
-減少登入上的麻煩，以及使用手機平台的方便性</p>
+<p>從<a href="http://www.tp.blood.org.tw/Internet/taipei/index.aspx">臺北捐血中心</a>網頁中，將圖示與及時資料截取到個人網頁中。
+結果呈現</p>
 
-<p>這是個人練功所產生的作品，非學校單位
-開發中-尚未上架至google play
-製作時間總共 6天</p>
+<p><img src="https://raw.githubusercontent.com/40025146/spider/master/pic1.png" alt="Alt text"></p>
 
-<p>學校的各處室網站幾乎沒有一套制定的規則去架設網站
-以至於開發上遇到重重困難
-例如想獨立製作較為舒適的課表版面，但卡在於學校的資料回傳值並非為開源資料
-而是經過網頁處理後的資料
-因此大多使用了iframe標籤直接嵌入</p>
-
-<h4 id="toc_1">系統環境</h4>
-
-<p>開發軟體: phonegap 、 cordova</p>
-
-<p>編譯環境: Android 3.7.1 、 ios 3.8.0</p>
-
-<h4 id="toc_2">Part1. 登入</h4>
-
-<p>登入時可選擇是否儲存賬密資料，儲存的方式使用SQL Lite 並不會將個人資料儲存在SD卡中作為檔案，同時方便下一次開啟時自動讀取。
-<img src=".././markdowns/2015-04-26_00-00-00/../../img/11129282_821664344567429_1474493896_n.jpg" alt="Alt text"></p>
-
-<h4 id="toc_3">Part2. 首頁</h4>
-
-<p>將大部分學生常用的網頁系統納入主要功能
-讀取。
-<img src=".././markdowns/2015-04-26_00-00-00/../../img/11129282_821664217900775_39050421_n.jpg" alt="Alt text"></p>
-
-<h4 id="toc_4">Part3. 部分展示</h4>
-
-<h5 id="toc_5">行事曆</h5>
-
-<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11131718_821664177900779_1423000097_n.jpg" alt="Alt text"></p>
-
-<h5 id="toc_6">個人課表</h5>
-
-<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11125270_821664104567453_1012146925_n.jpg" alt="Alt text"></p>
-
-<h5 id="toc_7">校務ecare</h5>
-
-<p><img src=".././markdowns/2015-04-26_00-00-00/../../img/11088738_821664084567455_1234733542_n.jpg" alt="Alt text"></p>
+<p><a href="https://github.com/40025146/spider">github連結 https://github.com/40025146/spider</a></p>
 
 
 </div>
           <div class='info clearfix'>
             <div class='tags all'>
-                          <span><a href=".././tag/phonegap">phonegap</a></span>
+                          <span><a href=".././tag/python">python</a></span>
                       </div>
           </div>
-          <div class="fb-comments" data-href="http://40025146.github.io/MyBlog/article/跨平台APP練功1 - 虎科多方通APP.html" data-numposts="5" data-colorscheme="light"></div>
+          <div class="fb-comments" data-href="http://40025146.github.io/MyBlog/article/【Python】利用pyquery對網頁parser.html" data-numposts="5" data-colorscheme="light"></div>
         </div>
       </div>
 
       <div class='right'>
                 <div class='pin oa_infos'>
-                <div class='message hide' data-name='跨平台APP練功1 - 虎科多方通APP'></div>
+                <div class='message hide' data-name='【Python】利用pyquery對網頁parser'></div>
                 <div class='line1'></div><div class='line2'></div>
                 <a href='' target='_blank'>
                   <div class='avatar_outline'>

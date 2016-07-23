@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
+  <loc>http://40025146.github.io/blog/article/%E3%80%90Excel%20VBA%E3%80%91%E5%AF%A6%E4%BD%9C%E4%B8%8D%E5%90%8C%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%88%E4%BD%B5%E8%B3%87%E6%96%99%20.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+  <lastmod>2016-07-15</lastmod>
+ </url>
+ <url>
+  <loc>http://40025146.github.io/blog/article/%E6%A2%85%E5%B1%B1%E5%A4%AA%E5%B9%B3%E7%A4%BE%E5%8D%80%E8%A7%80%E5%85%89%E5%B0%8E%E8%A6%BD%E7%B6%B2%E7%AB%99.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+  <lastmod>2016-07-01</lastmod>
+ </url>
+ <url>
   <loc>http://40025146.github.io/blog/article/%E8%B7%A8%E5%B9%B3%E5%8F%B0APP%E7%B7%B4%E5%8A%9F1%20-%20%E8%99%8E%E7%A7%91%E5%A4%9A%E6%96%B9%E9%80%9AAPP.html</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
   <lastmod>2015-04-26</lastmod>
+ </url>
+ <url>
+  <loc>http://40025146.github.io/blog/article/%E3%80%90Python%E3%80%91%E5%88%A9%E7%94%A8pyquery%E5%B0%8D%E7%B6%B2%E9%A0%81parser.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+  <lastmod>2014-12-15</lastmod>
+ </url>
+ <url>
+  <loc>http://40025146.github.io/blog/article/%E3%80%90%E7%B7%B4%E5%8A%9F%E3%80%91FlatCube%E9%81%8A%E6%88%B2%20.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+  <lastmod>2014-06-20</lastmod>
  </url>
 </urlset>
